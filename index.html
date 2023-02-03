@@ -18,8 +18,20 @@
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
         }
-        li{
-            list-style-type:none ;
+        ul{
+            list-style-type:square ;
+        }
+        ol{
+            list-style-type: 1;
+        }
+        #liste{
+            text-align: left;
+        }
+        #icerik{
+            position: left;
+        }
+        p{
+            color: chocolate;
         }
     </style>
 </head>
@@ -31,27 +43,49 @@
             Merhaba ben Numan Küllü. Kastamonuda yaşıyorum. Bilimkurgu/Cyberpunk türünde kitaplar okumayı, 
             filmler izlemeyi ve video oyunları oynamayı severim. Teknolojinin getirdiği yenilikleri gördükçe heycanlanan kişilerdenim. Boş zamanlarımda web tasarımı ve programlama ile uğraşıyorum. 
         </p>
-        <h2>Sevdiğim Filmler</h2>
-        <ul>
-            <li>Ghost İn The Shell</li>
-            <li>Matrix</li>
-            <li>Bladerunner</li>
-            <li>Star Wars</li>
-        </ul>
-        <h2>Sevdiğim Kitaplar</h2>
-        <ul>
-            <li>Olasılıksız</li>
-            <li>1984</li>
-            <li>Otostopçunun Galaksi Rehberi</li>
-            <li>Cesur Yeni Dünya</li>
-        </ul>
-        <h2>Sevdiğim Oyunlar</h2>
-        <ul>
-            <li>Metro</li>
-            <li>Portal</li>
-            <li>Half Life</li>
-            <li>Wolfenstein</li>
-        </ul>
+        <div id="icerik">
+            <ul id="liste">
+                <li>
+                    <h2>Sevdiğim Filmler</h2>
+                    <ol>
+                        <li>Ghost İn The Shell</li>
+                        <img src="Ghost.jpg" alt="Otostopçunun Galaxsi Rehberi" width="100px" height="150px"><br>
+                        <a href="https://www.imdb.com/title/tt1219827/">Ghost İn The Shell</a>
+                        <li>Matrix</li>
+                        <li>Bladerunner</li>
+                        <li>Star Wars</li>
+                    </ol>
+                </li>
+                <li>
+                    <h2>Sevdiğim Kitaplar</h2>
+                    <ol>
+                        <li>Olasılıksız</li>
+                        <li>1984</li>
+                        <li>Otostopçunun Galaksi Rehberi</li>
+                        <img src="Otostop.jpg" alt="Otostopçunun Galaxsi Rehberi" width="100px" height="150px"><br>
+                        <a href="https://www.goodreads.com/book/show/35668189-otostop-unun-galaksi-rehberi">Otostopçunun Galaksi Rehberi</a>
+                        <li>Cesur Yeni Dünya</li>
+                    </ol>
+                </li>
+                <li>
+                    <h2>Sevdiğim Oyunlar</h2>
+                    <ol>
+                        <li>Metro</li>
+                        <div id="resim">
+                            <img src="metro.jpg"  width="200px" height="200px" alt="Metro">
+                        <p>
+                            Metro 2033, Rus yazar Dmitry Glukhovsky'nin Metro 2033 adlı 
+                            romanından uyarlanan birinci şahıs nişancı tipinde hayatta 
+                            kalma-korku video oyunudur.
+                        </p>
+                        </div>
+                        <li>Portal</li>
+                        <li>Half Life</li>
+                        <li>Wolfenstein</li>
+                    </ol>
+                </li>
+            </ul>
+         </div>
     </div>
 </body>
 </html>
